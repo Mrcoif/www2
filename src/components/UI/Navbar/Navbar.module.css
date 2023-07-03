@@ -1,0 +1,25 @@
+.navbar {
+    height: 50px;
+    /*width: 100vw;*/
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    background: lightgray;
+}
+
+.navbar__loginout {
+    margin-left: auto;
+}
+
+.navbar__links {
+
+}
+.navbar__links__link {
+    margin-right: 15px;
+    padding: 5px 15px;
+    color: teal;
+    font-size: 14px;
+    background: transparent;
+    border: 1px solid teal;
+    cursor: pointer;
+}

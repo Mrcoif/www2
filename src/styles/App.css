@@ -5,7 +5,6 @@
 }
 
 #root {
-    width: 98%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,7 +12,26 @@
 }
 
 .App {
+
+
+}
+
+.posts-page {
     width: 800px;
+
+}
+
+.navbar {
+    height: 50px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    background: lightgray;
+}
+
+.navbar__links {
+    margin-left: auto;
 }
 
 .post {
@@ -25,8 +43,12 @@
     align-items: center;
 }
 
+.post__btns {
+    display: flex;
+}
+
 .post-enter {
-    transform: translateX(-750px);
+    transform: translateX(-350px);
 }
 .post-enter-active {
     transform: translateX(0px);
@@ -36,7 +58,7 @@
     opacity: 1;
 }
 .post-exit-active {
-    transform: translateX(-750px);
+    transform: translateX(-350px);
     transition: all 500ms ease-in;
 }
 

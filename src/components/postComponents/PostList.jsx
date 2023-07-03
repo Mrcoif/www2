@@ -3,7 +3,7 @@ import PostItem from './PostItem'
 import TransitionGroup from "react-transition-group/cjs/TransitionGroup";
 import CSSTransition from "react-transition-group/cjs/CSSTransition";
 
-const PostList = ({ posts, title, remove}) => {
+const PostList = ({ posts, title, remove, limit, page}) => {
 
 	if(!posts.length){
 		return (
@@ -17,7 +17,7 @@ const PostList = ({ posts, title, remove}) => {
 			<TransitionGroup>
 				{posts.map((post, index) => (
 					<CSSTransition key={post.id} timeout={500} classNames="post">
-						<PostItem remove = {remove} number = {index +1} post={post} />
+						<PostItem remove = {remove} number = {limit*(page-1) + index +1} post={post} />
 					</CSSTransition>
 
 				))}
